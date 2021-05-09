@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextAppearance.FontMedium" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+    </style>
+
+    <style name="TextAppearance.FontRegular" parent="android:TextAppearance">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+
+    <!--
+        Roboto Regular (@font/roboto_regular) -> CSS normal
+        Roboto Medium (@font/roboto_medium) -> CSS font weight 500
+        Roboto Bold -> CSS font weight 700
+
+        If TextAppearance.ABM.[some style] has android:lineSpacingExtra attribute
+        then DONT apply textAppearance like this
+        android:textAppearance="@style/TextAppearance.ABM.[some style]"
+        since lineSpacingExtra will be IGNORED.
+
+        Instead apply textAppearance like this
+        style="@style/TextAppearance.ABM.[some style]"
+    -->
+
+    <style name="TextAppearance.ABM" parent="TextAppearance.AppCompat" >
+        <item name="android:textColor">@color/text_primary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline1">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">48sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline2">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">34sp</item>
+        <item name="android:letterSpacing">0.00735294118</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline3">
+        <item name="fontFamily">@font/roboto_bold</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline4">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:letterSpacing">0.0125</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle1">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:letterSpacing">0.009375</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle2">
+        <!-- Fake Roboto Medium. -->
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.00625</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body1">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:letterSpacing">0.03125</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body2">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.0178571429</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Button">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:lineSpacingExtra">1sp</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Caption">
+        <item name="fontFamily">@font/roboto_regular</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.0333333333</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Overline">
+        <item name="fontFamily">@font/roboto_medium</item>
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:letterSpacing">0.166666667</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+    </style>
+
+
+    <!-- Fonts with secondary color -->
+    <style name="TextAppearance.ABM.Headline1.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline2.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline3.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline4.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle1.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle2.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body1.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body2.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Button.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Caption.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Overline.Secondary">
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+
+    <!-- Fonts with white color -->
+    <style name="TextAppearance.ABM.Headline1.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline2.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline3.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Headline4.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle1.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Subtitle2.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body1.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Body2.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Button.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Caption.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextAppearance.ABM.Overline.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+</resources>

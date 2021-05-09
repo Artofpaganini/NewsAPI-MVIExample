@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin4">4dp</dimen>
+    <dimen name="marginXS">4dp</dimen>
+    <dimen name="marginSX">6dp</dimen>
+    <dimen name="marginS">8dp</dimen>
+    <dimen name="margin10">10dp</dimen>
+    <dimen name="marginSM">12dp</dimen>
+    <dimen name="marginM">16dp</dimen>
+    <dimen name="marginMS">18dp</dimen>
+    <dimen name="marginML">20dp</dimen>
+    <dimen name="marginLM">22dp</dimen>
+    <dimen name="marginL">24dp</dimen>
+    <dimen name="marginX">26dp</dimen>
+    <dimen name="marginLX">30dp</dimen>
+    <dimen name="marginXL">32dp</dimen>
+    <dimen name="marginXXL">42dp</dimen>
+    <dimen name="marginXXXL">48dp</dimen>
+
+    <dimen name="paddingXXS">4dp</dimen>
+    <dimen name="paddingXS">6dp</dimen>
+    <dimen name="paddingS">8dp</dimen>
+    <dimen name="paddingSM">12dp</dimen>
+    <dimen name="paddingMS">14dp</dimen>
+    <dimen name="paddingM">16dp</dimen>
+    <dimen name="paddingL">24dp</dimen>
+    <dimen name="paddingXXL">64dp</dimen>
+    <dimen name="paddingTiny">2.0dp</dimen>
+
+    <dimen name="textS">12sp</dimen>
+    <dimen name="textSM">14sp</dimen>
+    <dimen name="textM">16sp</dimen>
+    <dimen name="textLM">20sp</dimen>
+    <dimen name="textL">24sp</dimen>
+    <dimen name="textXL">34sp</dimen>
+
+    <dimen name="progress_bar_arc_default_width">4dp</dimen>
+
+    <dimen name="iconS">24dp</dimen>
+    <dimen name="iconM">36dp</dimen>
+    <dimen name="iconML">40dp</dimen>
+    <dimen name="iconL">48dp</dimen>
+
+    <dimen name="buttonS">48dp</dimen>
+    <dimen name="buttonM">56dp</dimen>
+
+    <dimen name="progressM">48dp</dimen>
+
+    <dimen name="radiusXXS">2dp</dimen>
+    <dimen name="radiusS">8dp</dimen>
+
+
+    //TODO() change names according to size
+    <dimen name="font_size_10dp">10.0dp</dimen>
+    <dimen name="font_size_11dp">11.0dp</dimen>
+    <dimen name="font_size_12dp">12.0dp</dimen>
+    <dimen name="font_size_13dp">13.0dp</dimen>
+    <dimen name="font_size_14dp">14.0dp</dimen>
+    <dimen name="font_size_15dp">15.0dp</dimen>
+    <dimen name="font_size_16dp">16.0sp</dimen>
+    <dimen name="font_size_17dp">17.0dp</dimen>
+    <dimen name="font_size_18dp">18.0dp</dimen>
+    <dimen name="font_size_22dp">22.0dp</dimen>
+
+    <dimen name="card_statements_bottom_progress_height">3dp</dimen>
+    <dimen name="card_list_progress_bar_height">48dp</dimen>
+    <dimen name="card_list_view_pager_height">220dp</dimen>
+    <dimen name="card_status_textview_width">240dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+
+    <dimen name="chip_padding">2dp</dimen>
+
+    <dimen name="elevationXXXS">2dp</dimen>
+</resources>
