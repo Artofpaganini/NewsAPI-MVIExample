@@ -1,14 +1,13 @@
 package by.andersen.dobrov.newsapi.domain
 
 import by.andersen.dobrov.newsapi.domain.model.News.Article
-import by.andersen.dobrov.newsapi.util.Response
+import by.andersen.dobrov.newsapi.presentation.list.dto.RequestDTO
+import by.andersen.dobrov.newsapi.util.BaseError
+import by.andersen.dobrov.newsapi.util.BaseResult
 
 interface NewsListRepository {
 
     suspend fun getNews(
-        query: String,
-        from: String,
-        sortBy: String,
-        apiKey: String,
-    ): Response<List<Article>>
+        requestDTO: RequestDTO
+    ): BaseResult<List<Article>, BaseError>
 }

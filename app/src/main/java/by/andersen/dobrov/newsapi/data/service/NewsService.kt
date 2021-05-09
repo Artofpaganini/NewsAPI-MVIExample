@@ -13,5 +13,5 @@ interface NewsService {
         @Path(value = "from") from: String,
         @Path(value = "sortBy") sortBy: String,
         @Path(value = "apiKey") apiKey: String,
-    ): Response<NewsApiResponse>
+    ): NewsApiResponse
 }

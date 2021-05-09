@@ -2,10 +2,14 @@ package by.andersen.dobrov.newsapi.data.mapper
 
 import by.andersen.dobrov.newsapi.data.model.NewsApiResponse
 import by.andersen.dobrov.newsapi.domain.model.News
+import by.andersen.dobrov.newsapi.util.DateFormat
+import by.andersen.dobrov.newsapi.util.DateFormatter
 import by.andersen.dobrov.newsapi.util.Mapper
 
 
-class NewsMapper : Mapper<NewsApiResponse, List<News.Article>>() {
+class NewsMapper(
+    private val dateFormatter: DateFormatter,
+) : Mapper<NewsApiResponse, List<News.Article>>() {
 
     override fun map(from: NewsApiResponse): List<News.Article> = from.articles.map {
         getNews(it)
@@ -19,7 +23,7 @@ class NewsMapper : Mapper<NewsApiResponse, List<News.Article>>() {
         description = article.description,
         url = article.url,
         urlToImage = article.urlToImage,
-        publishedAt = article.publishedAt,
+        publishedAt = formatDate(article.publishedAt),
         content = article.content,
 
         )
@@ -28,5 +32,10 @@ class NewsMapper : Mapper<NewsApiResponse, List<News.Article>>() {
         id = source.id,
         name = source.name,
     )
+
+    private fun formatDate(date: String): String {
+        val data = dateFormatter.parse(date, DateFormat.API_DATE_FORMAT)
+        return dateFormatter.format(data, DateFormat.UI_DATE_FORMAT)!!
+    }
 
 }

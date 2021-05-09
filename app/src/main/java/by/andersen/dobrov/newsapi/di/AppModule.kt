@@ -21,6 +21,7 @@ val appModules = listOf(
     apiModule,
     networkModule,
     coilModule,
-    repositoryModule
+    repositoryModule,
+    newsViewModelModule
 )
 

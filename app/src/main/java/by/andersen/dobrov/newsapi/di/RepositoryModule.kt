@@ -1,6 +1,7 @@
 package by.andersen.dobrov.newsapi.di
 
 import by.andersen.dobrov.newsapi.data.NewsListRepositoryImpl
+import by.andersen.dobrov.newsapi.data.mapper.NewsMapper
 import by.andersen.dobrov.newsapi.domain.NewsListRepository
 import org.koin.dsl.module
 
@@ -9,6 +10,10 @@ val repositoryModule = module {
         NewsListRepositoryImpl(
             newsService = get(),
             newsMapper = get(),
+        )
+    }
+    single {
+        NewsMapper(
             dateFormatter = get()
         )
     }

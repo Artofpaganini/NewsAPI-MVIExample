@@ -4,45 +4,42 @@ import by.andersen.dobrov.newsapi.data.mapper.NewsMapper
 import by.andersen.dobrov.newsapi.data.service.NewsService
 import by.andersen.dobrov.newsapi.domain.NewsListRepository
 import by.andersen.dobrov.newsapi.domain.model.News.Article
-import by.andersen.dobrov.newsapi.util.DateFormat
+import by.andersen.dobrov.newsapi.presentation.list.dto.RequestDTO
+import by.andersen.dobrov.newsapi.util.BaseError
+import by.andersen.dobrov.newsapi.util.BaseResult
 import by.andersen.dobrov.newsapi.util.DateFormatter
-import by.andersen.dobrov.newsapi.util.Response
+import by.andersen.dobrov.newsapi.util.error.*
+
 
 class NewsListRepositoryImpl(
     private val newsService: NewsService,
     private val newsMapper: NewsMapper,
-    private val dateFormatter: DateFormatter,
+
 ) : NewsListRepository {
 
     override suspend fun getNews(
-        query: String,
-        from: String,
-        sortBy: String,
-        apiKey: String,
-    ): Response<List<Article>> {
-        return when (val response = newsService.getNews(
-            query = query,
-            from = from,
-            sortBy = sortBy,
-            apiKey = apiKey,
-        )) {
-            is Response.Success -> {
+        requestDTO: RequestDTO
+    ): BaseResult<List<Article>, BaseError> = try {
+        val response = newsService.getNews(
+            query = requestDTO.query,
+            from = requestDTO.from,
+            sortBy = requestDTO.sortBy,
+            apiKey = requestDTO.apiKey,
+        )
 
-                response.data.articles.map {
-                    formatDate(it.publishedAt)
-                }
-
-                Response.Success(newsMapper.map(response.data))
-            }
-            is Response.Failure -> Response.Failure(response.data)
-
-
-        }
-    }
-
-    private fun formatDate(date: String) {
-        val data = dateFormatter.parse(date, DateFormat.API_DATE_FORMAT)
-        dateFormatter.format(data, DateFormat.UI_DATE_FORMAT)!!
+        BaseResult.Success(newsMapper.map(response))
+    } catch (e: Exception) {
+        val lowLevelError = e.toBaseError()
+        val apiError = ApiError(
+            code = ApiErrorCode.LoadNews,
+            underlying = lowLevelError
+        )
+        val domainError = DomainError(
+            code = DomainErrorCode.LoadNews,
+            underlying = apiError
+        )
+        BaseResult.Failure(error = domainError)
     }
 }
+
 
