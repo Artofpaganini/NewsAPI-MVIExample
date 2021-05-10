@@ -120,14 +120,14 @@
     <style name="Button" />
 
     <style name="Button.Action" parent="Widget.AppCompat.Button.Colored">
-        <item name="android:background">@drawable/bg_button</item>
+
         <item name="android:textColor">@color/white</item>
     </style>
     <style name="BottomNavigation">
         <item name="android:background">@color/white</item>
-        <item name="itemBackground">@drawable/bg_navigation_bar_item</item>
-        <item name="itemIconTint">@color/nav_bar_item_color</item>
-        <item name="itemTextColor">@color/nav_bar_item_color</item>
+
+
+
         <item name="paddingStart">10dp</item>
         <item name="paddingEnd">10dp</item>
     </style>
@@ -192,7 +192,7 @@
 
     <style name="Widget.ABM.Toolbar.Light" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">@color/white</item>
-        <item name="navigationIcon">@drawable/ic_arrow_back_black</item>
+
         <item name="titleTextAppearance">@style/TextAppearance.ABM.Headline4</item>
     </style>
 
@@ -257,7 +257,7 @@
     </style>
 
     <style name="DateViewEditTextStyle" parent="Widget.AppCompat.EditText">
-        <item name="android:drawableEnd">@drawable/ic_calendar_black</item>
+
         <item name="android:drawablePadding">8dp</item>
         <item name="android:focusable">false</item>
         <item name="android:cursorVisible">false</item>
@@ -285,19 +285,19 @@
 
     <style name="Divider.Horizontal.Dark" parent="Divider.Horizontal">
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">@drawable/bg_divider_horizontal_dark</item>
+
     </style>
     <style name="Divider.Horizontal.Light" parent="Divider.Horizontal">
         <item name="android:layout_height">1dp</item>
-        <item name="android:background">@drawable/bg_divider_horizontal_light</item>
+
     </style>
     <style name="Divider.Vertical.Dark" parent="Divider.Vertical">
         <item name="android:layout_width">1dp</item>
-        <item name="android:background">@drawable/bg_divider_vertical_dark</item>
+
     </style>
     <style name="Divider.Vertical.Light" parent="Divider.Vertical">
         <item name="android:layout_width">1dp</item>
-        <item name="android:background">@drawable/bg_divider_vertical_light</item>
+
     </style>
 
     <style name="PullToLoad"/>
@@ -314,7 +314,7 @@
     </style>
 
     <style name="InfoBlock" parent="TextAppearance.ABM.Body2">
-        <item name="android:background">@drawable/bg_info_block_state</item>
+
         <item name="android:paddingStart">@dimen/paddingM</item>
         <item name="android:paddingEnd">@dimen/paddingM</item>
         <item name="android:paddingTop">12dp</item>
@@ -322,7 +322,7 @@
     </style>
 
     <style name="InfoHintBlock" parent="TextAppearance.ABM.Caption">
-        <item name="android:background">@drawable/bg_info_block_state</item>
+
         <item name="android:paddingStart">@dimen/paddingM</item>
         <item name="android:paddingEnd">@dimen/paddingM</item>
         <item name="android:paddingTop">12dp</item>

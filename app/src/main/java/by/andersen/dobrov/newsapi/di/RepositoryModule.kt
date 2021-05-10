@@ -12,7 +12,7 @@ val repositoryModule = module {
             newsMapper = get(),
         )
     }
-    single {
+    factory {
         NewsMapper(
             dateFormatter = get()
         )

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="auto_complete_divider_height">0.5dp</dimen>
+    <dimen name="auto_complete_input_padding_top">16dp</dimen>
+    <dimen name="auto_complete_input_margin_horizontal">16dp</dimen>
+    <dimen name="auto_complete_any_padding_horizontal">20dp</dimen>
+    <dimen name="auto_complete_suggestions_label_padding_top">8dp</dimen>
+    <dimen name="auto_complete_suggestions_item_padding_vertical">16dp</dimen>
+    <dimen name="auto_complete_no_results_icon_padding_bottom">16dp</dimen>
+    <dimen name="auto_complete_empty_view_padding_horizontal">16dp</dimen>
+
+</resources>

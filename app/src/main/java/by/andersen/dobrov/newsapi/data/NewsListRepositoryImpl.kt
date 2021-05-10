@@ -7,18 +7,16 @@ import by.andersen.dobrov.newsapi.domain.model.News.Article
 import by.andersen.dobrov.newsapi.presentation.list.dto.RequestDTO
 import by.andersen.dobrov.newsapi.util.BaseError
 import by.andersen.dobrov.newsapi.util.BaseResult
-import by.andersen.dobrov.newsapi.util.DateFormatter
 import by.andersen.dobrov.newsapi.util.error.*
 
 
 class NewsListRepositoryImpl(
     private val newsService: NewsService,
     private val newsMapper: NewsMapper,
-
 ) : NewsListRepository {
 
     override suspend fun getNews(
-        requestDTO: RequestDTO
+        requestDTO: RequestDTO,
     ): BaseResult<List<Article>, BaseError> = try {
         val response = newsService.getNews(
             query = requestDTO.query,

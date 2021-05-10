@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ConversionAccountView">
+        <attr name="balance" format="string" />
+        <attr name="currency_symbol" format="string" />
+        <attr name="account_type" format="string" />
+        <attr name="last_four_numbers" format="string" />
+        <attr name="placeholder_text" format="string" />
+        <attr name="has_menu_icon" format="boolean" />
+        <attr name="account_title_text" format="string"/>
+    </declare-styleable>
+</resources>

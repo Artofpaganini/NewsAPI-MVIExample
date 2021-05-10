@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SelectViewHeaderStyle" parent="TextAppearance.ABM.Headline4">
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:gravity">start|center</item>
+    </style>
+
+    <style name="SelectViewItemStyle" parent="TextAppearance.ABM.Subtitle2">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+</resources>

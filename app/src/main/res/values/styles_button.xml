@@ -9,7 +9,7 @@
     </style>
 
     <style name="RedButton" parent="BaseButton">
-        <item name="android:background">@drawable/bg_red_button</item>
+
         <item name="android:textColor">@color/white</item>
     </style>
 
@@ -17,12 +17,12 @@
 
     <style name="Widget.ABM.Button.Primary">
         <item name="android:textAppearance">@style/TextAppearance.ABM.Button.White</item>
-        <item name="android:background">@drawable/bg_btn_primary</item>
+
     </style>
 
     <style name="Widget.ABM.Button.Secondary">
         <item name="android:textAppearance">@style/TextAppearance.ABM.Button</item>
-        <item name="android:background">@drawable/bg_btn_secondary</item>
+
     </style>
 
 </resources>
